@@ -1,0 +1,12 @@
+{% extends "blog/base.html" %}
+{% block title %}Contact{% endblock %}
+{% block content %}
+    <h2>Contact Me</h2>
+     <p>Please fill the form below to contact us</p>
+     <form method="POST">
+         {% csrf_token %}
+         {{ form }}<br><br><br><br><br><br><br><br><br><br><br><br><br>
+         <button type="submit" class="btn btn-light">Submit
+        </button>
+     </form>
+{% endblock %}
