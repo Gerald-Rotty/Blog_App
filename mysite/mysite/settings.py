@@ -82,16 +82,16 @@ else:
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-""""DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME':'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'localhost,
-        'HOST': 'localhost',
-        'PORT':5432,
+        'NAME':'defaultdb',
+        'USER': 'avnadmin',
+        'PASSWORD': 'AVNS_gqnlN6dmmh7J6_OeZVA',
+        'HOST': 'pg-16432556-littleintels-1e7a.aivencloud.com',
+        'PORT':12346,
     }
-}"""
+}
 
 
 # Password validation
