@@ -82,16 +82,16 @@ else:
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
+""""DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': env('PCNAME'),
-        'USER': env('PCUSER'),
-        'PASSWORD': env('PCPASSWORD'),
-        'HOST': env('PCHOST'),
-        'PORT': env('PCPORT'),
+        'NAME':'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'localhost,
+        'HOST': 'localhost',
+        'PORT':5432,
     }
-}
+}"""
 
 
 # Password validation
