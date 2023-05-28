@@ -84,12 +84,11 @@ else:
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME':'defaultdb',
-        'USER': 'avnadmin',
-        'PASSWORD': 'AVNS_gqnlN6dmmh7J6_OeZVA',
-        'HOST': 'pg-16432556-littleintels-1e7a.aivencloud.com',
-        'PORT':12346,
+        'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': env('DATABASE_NAME'),
+        'USER': env('DATABASE_USER'),
+        'PASSWORD': env('DATABASE_PASS'),
     }
 }
 
