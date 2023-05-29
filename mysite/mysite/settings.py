@@ -1,3 +1,4 @@
+import os.path
 from pathlib import Path
 import environ
 env = environ.Env()
@@ -84,10 +85,12 @@ else:
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': env('DATABASE_NAME'),
-        'USER': env('DATABASE_USER'),
-        'PASSWORD': env('DATABASE_PASS'),
+         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+         'NAME':'defaultdb',
+         'USER': 'avnadmin',
+         'PASSWORD': 'AVNS_gqnlN6dmmh7J6_OeZVA',
+         'HOST': 'pg-16432556-littleintels-1e7a.aivencloud.com',
+         'PORT':12346,
     }
 }
 
@@ -127,6 +130,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
